@@ -1,0 +1,72 @@
+.jumbotron{
+  padding: 70px 0 0 0;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  background-color: #b5ebe1;
+  text-transform: uppercase;
+}
+.fa-thumbs-up {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa-thumbs-up:hover {
+  color: darkblue;
+}
+.fa-thumbs-up::after{
+  color: darkblue;
+}
+.mycenter{
+  text-align: center;
+}
+.heading{
+  font-weight: bold;
+  font-family: 'Times New Roman',Times,sans-serif;
+  letter-spacing: 2px;
+
+}
+.footer{
+  padding: 50px 0 0 0;
+  background-color: #988FFF;
+}
+#ans{
+  padding: 50px;
+  /* margin: 10px 0 0 10px; */
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  color: black;
+}
+#ans-2{
+  padding: 50px;
+  /* margin: 10px 0 0 10px; */
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  color: black;
+}
+#ans-3{
+  padding: 50px;
+  /* margin: 10px 0 0 10px; */
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  color: black;
+}
+#ans-4{
+  padding: 50px;
+  /* margin: 10px 0 0 10px; */
+  font-weight: bold;
+  font-family: 'Roboto',sans-serif;
+  color: black;
+}
+#hint_ans3{
+  font-family: cursive;
+}
+#hint_ans4{
+  font-family: cursive;
+}
+#hint_ans2{
+  font-family: cursive;
+}
+#hint_ans{
+  font-family: cursive;
+}

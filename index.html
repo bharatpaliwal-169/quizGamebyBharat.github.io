@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>QuizbyBharat</title>
+    <!-- style links -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+    <script src="https://kit.fontawesome.com/5ba01f7dd3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+<!-- navigation -->
+<nav class="navbar navbar-dark navbar-expand-sm fixed-top bg-dark">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- <a class="navbar-brand mr-auto" href="index.html"><img src="img/logo.png" height="30" width="41"></a> -->
+        <div class="collapse navbar-collapse" id="Navbar" role="slider">
+            <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active"><a class="nav-link" href="index.html"> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutme.html"> About</a></li>
+                    <li class="nav-item "><a class="nav-link" href="more.html">More</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- header -->
+<header class="jumbotron">
+  <div class="container">
+    <div class="row row-header">
+      <div class="col-12 col-sm mycenter">
+        <h1 class="heading">Quiz</h1>
+        <!-- <p>This is a simple quiz game. <span class="badge badge-danger">Easy</span> </p> -->
+      </div>
+    </div>
+  </div>
+</header>
+<!-- main content -->
+
+  <!-- instructions -->
+<div class="container">
+  <div class="row row-content">
+    <div class="col-12 col-sm-12">
+      <h5>Please follow these simple instructions:</h5>
+      <ul>
+        <li> <span class="badge badge-danger">Important</span> <strong>
+          Please write your response in LowerCase Only</strong> </li>
+        <li>This is a general knowledge based Quiz.</li>
+        <li>You can attempt any question for any number of time.</li>
+        <li>Please submit your answers after each question</li>
+        <li>Please give the feedback!</li>
+      </ul>
+      <hr>
+    </div>
+    <div class="col-12 col-sm-4">
+      <div class="alert alert-success alert-dismissible fade show" role="alert">
+        <strong>All The Best</strong>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- game -->
+
+<div class="container">
+  <!-- this is main game arena. -->
+  <div class="row row-content">
+    <div class="col-12 col-sm-6">
+      <div class="card">
+          <div class="card-header bg-dark text-white">
+            Question-1
+          </div>
+
+          <div class="card-body">
+            <div class="col-12 col-sm">
+              <!-- question -->
+              <h5>Who recently became the fastest Indian Youtuber to make 6M likes? </h5>
+              <!-- answer -->
+              <form>
+                <div class="form-group row">
+                      <label for="answer" class="col-form-label col-12 "><strong>Answer:</strong></label>
+                      <div class="col-12">
+                        <input type="text" id="response" name="answer" placeholder="Your response here">
+                      </div>
+                    </div>
+              </form>
+              <div class="col-12 col-sm-3 ">
+                <button class=" btn btn-outline-dark btn-lg" type="button"  onclick="checkAns();">
+                  <h6>Submit</h6>
+                </button>
+              </div>
+                <div class="col-12 col-sm-10">
+                    <strong> <p id="ans"></p> </strong>
+                </div>
+
+            </div>
+
+          </div>  <!--card body-->
+          <div class="card-footer">
+            <div class="col-12">
+              <button class="btn btn-danger"  onclick="hint_1();"type="button" >
+                Hint
+              </button>
+              <p id="hint_ans"></p>
+            </div>
+          </div>
+    </div>
+<!-- card-1 end here -->
+
+    </div>
+
+    <div class="col-12 col-sm-6">
+      <div class="card">
+          <div class="card-header bg-dark text-white">
+            Question-2
+          </div>
+
+          <div class="card-body">
+            <div class="col-12 col-sm">
+              <!-- question -->
+              <h5>Which city of Rajasthan is also known as 'The Blue City of India' ?</h5>
+              <!-- answer -->
+              <form>
+                <div class="form-group row">
+                      <label for="answer" class="col-form-label col-12 "><strong>Answer:</strong></label>
+                      <div class="col-12">
+                        <input type="text" id="response-2" name="answer" placeholder="Your response here">
+                      </div>
+                    </div>
+              </form>
+              <div class="col-12 col-sm-3 ">
+                <button class=" btn btn-outline-dark btn-lg" type="button"  onclick="checkAns_2();">
+                  <h6>Submit</h6>
+                </button>
+              </div>
+                <div class="col-12 col-sm-10">
+                    <strong> <p id="ans-2"></p> </strong>
+                </div>
+
+            </div>
+
+          </div>  <!--card body-->
+          <div class="card-footer">
+            <div class="col-12">
+              <button class="btn btn-danger"  onclick="hint_2();"type="button" >
+                Hint
+              </button>
+              <p id="hint_ans2"></p>
+            </div>
+          </div>
+    </div>
+<!-- card-2 end here -->
+
+    </div>
+
+    <div class="col-12 col-sm-6">
+      <div class="card">
+          <div class="card-header bg-dark text-white">
+            Question-3
+          </div>
+
+          <div class="card-body">
+            <div class="col-12 col-sm">
+              <!-- question -->
+              <h5>In which year did PV Sindhu won Silver medal in olympics for India?</h5>
+              <!-- answer -->
+              <form>
+                <div class="form-group row">
+                      <label for="answer" class="col-form-label col-12 "><strong>Answer:</strong></label>
+                      <div class="col-12">
+                        <input type="text" id="response-3" name="answer" placeholder="Your response here">
+                      </div>
+                    </div>
+              </form>
+              <div class="col-12 col-sm-3 ">
+                <button class=" btn btn-outline-dark btn-lg" type="button"  onclick="checkAns_3();">
+                  <h6>Submit</h6>
+                </button>
+              </div>
+                <div class="col-12 col-sm-10">
+                    <strong> <p id="ans-3"></p> </strong>
+                </div>
+
+            </div>
+
+          </div>  <!--card body-->
+          <div class="card-footer">
+            <div class="col-12">
+              <button class="btn btn-danger"  onclick="hint_3();"type="button" >
+                Hint
+              </button>
+              <p id="hint_ans3"></p>
+            </div>
+          </div>
+    </div>
+<!-- card-3 end here -->
+
+    </div>
+
+
+    <div class="col-12 col-sm-6">
+      <div class="card">
+          <div class="card-header bg-dark text-white">
+            Question-4
+          </div>
+
+          <div class="card-body">
+            <div class="col-12 col-sm">
+              <!-- question -->
+              <h5>Who is the speaker of Lok Sabha? </h5>
+              <!-- answer -->
+              <form>
+                <div class="form-group row">
+                      <label for="answer" class="col-form-label col-12 "><strong>Answer:</strong></label>
+                      <div class="col-12">
+                        <input type="text" id="response-4" name="answer" placeholder="Your response here">
+                      </div>
+                    </div>
+              </form>
+              <div class="col-12 col-sm-3 ">
+                <button class=" btn btn-outline-dark btn-lg" type="button"  onclick="checkAns_4();">
+                  <h6>Submit</h6>
+                </button>
+              </div>
+                <div class="col-12 col-sm-10">
+                    <strong> <p id="ans-4"></p> </strong>
+                </div>
+
+            </div>
+
+          </div>  <!--card body-->
+          <div class="card-footer">
+            <div class="col-12">
+              <button class="btn btn-danger"  onclick="hint_4();"type="button" >
+                Hint
+              </button>
+              <p id="hint_ans4"></p>
+            </div>
+          </div>
+    </div>
+<!-- card-4 end here -->
+
+    </div>
+
+
+
+
+
+  </div>
+<!-- game end here -->
+</div>
+
+
+
+
+<!-- footer -->
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 col-sm-4 ">
+        <h6>Created &amp; Developed by:</h6>
+        <p>&copy Bharat Paliwal</p>
+      </div>
+      <div class="col-12 col-sm-4 order-last-sm">
+
+            <h5>Follow me:</h5>
+              <a class="btn btn-social-icon btn-facebook" href="https://www.facebook.com/bharat.paliwal.3958914" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/bharat-paliwal-ab7169179/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/BharatP58380618" target="_blank"><i class="fa fa-twitter"></i></a>
+              
+    </div>
+    <div class="col-12 col-sm-3">
+
+<button onclick="like();" id="liked" class="btn btn-block btn-primary">Like </button>
+    </div>
+
+</div>
+    </div>
+  </div>
+</footer>
+
+    <!-- bootstrap scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- myScripts -->
+<script src="scripts/script.js" charset="utf-8"></script>
+
+  </body>
+</html>
