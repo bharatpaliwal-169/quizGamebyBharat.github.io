@@ -1,84 +1,12 @@
-.jumbotron{
-  padding: 70px 0 0 0;
-  font-weight: bold;
-  font-family: 'Roboto', sans-serif;
-  background-color: #b5ebe1;
-  text-transform: uppercase;
-}
-.fa-thumbs-up {
-  font-size: 50px;
-  cursor: pointer;
-  user-select: none;
-}
-
-.fa-thumbs-up:hover {
-  color: darkblue;
-}
-.fa-thumbs-up::after{
-  color: darkblue;
-}
-.mycenter{
-  text-align: center;
-}
-.heading{
-  font-weight: bold;
-  font-family: 'Times New Roman',Times,sans-serif;
-  letter-spacing: 2px;
-
-}
-.footer{
-  padding: 50px 0 0 0;
-  background-color: #988FFF;
-}
-#ans{
-  padding: 50px;
-  /* margin: 10px 0 0 10px; */
-  font-weight: bold;
-  font-family: 'Roboto',sans-serif;
-  color: black;
-}
-#ans-2{
-  padding: 50px;
-  /* margin: 10px 0 0 10px; */
-  font-weight: bold;
-  font-family: 'Roboto',sans-serif;
-  color: black;
-}
-#ans-3{
-  padding: 50px;
-  /* margin: 10px 0 0 10px; */
-  font-weight: bold;
-  font-family: 'Roboto',sans-serif;
-  color: black;
-}
-#ans-4{
-  padding: 50px;
-  /* margin: 10px 0 0 10px; */
-  font-weight: bold;
-  font-family: 'Roboto',sans-serif;
-  color: black;
-}
-#hint_ans3{
-  font-family: cursive;
-}
-#hint_ans4{
-  font-family: cursive;
-}
-#hint_ans2{
-  font-family: cursive;
-}
-#hint_ans{
-  font-family: cursive;
-}
-
 .share-button{
-  width: 220px;
-  height: 70px;
+  width: 280px;
+  height: 50px;
   background: #dfe6e9;
-  border-radius: 40px;
+  /* border-radius: 40px; */
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   overflow: hidden;
   position: relative;
   cursor: pointer;
@@ -98,7 +26,7 @@
   line-height: 80px;
   z-index: 999;
   transition: .6s linear;
-  border-radius: 40px;
+  /* border-radius: 40px; */
 }
 
 .share-button:hover span{
@@ -132,14 +60,13 @@
   transition-delay: .4s;
 }
 
-
 .container-follow{
   display: flex;
   align-items: center;
   /* justify-content: center; */
   /* height:100vh; */
   text-align: center;
-  /* background: grey; */
+  padding-left: 50px;
 }
 
 .cent ul{
@@ -151,7 +78,7 @@
 .cent ul .text{
   position: absolute;
   top: 0; left:0; right: 0;
-  background:#1f7a7a;
+  background: #1f7a7a;
   color: #eee;
   line-height: 50px;
   font-size: 22px;
